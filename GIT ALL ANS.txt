@@ -1,0 +1,1134 @@
+GIT & GITHUB ASSIGNMENTS- VARSHINI_S
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~ (master)
+$ mkdir project_dir
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~ (master)
+$ cd project_dir
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git init
+Initialized empty Git repository in C:/Users/user/project_dir/.git/
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ touch index.html
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git commit -m "index file"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git commit -m "index file"
+[master (root-commit) 36b0058] index file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git commit -m "index file"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ touch info.txt
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        info.txt
+
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ touch .gitignore
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        info.txt
+
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ add .
+bash: add: command not found
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        new file:   info.txt
+
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ touch .gitignore
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        new file:   info.txt
+
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git commit -m "index file"
+[master 052c78c] index file
+ 3 files changed, 1 insertion(+)
+ create mode 100644 .gitignore
+ create mode 100644 info.txt
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git log
+commit 052c78cab3e59c60abd6b1328203ed67a5dcf8eb (HEAD -> master)
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 16:58:30 2021 +0530
+
+    index file
+
+commit 36b0058700ba47fbe4d7f30be18d7dba32d75ce9
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 16:51:38 2021 +0530
+
+    index file
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git add .
+
+-----------------------------------section-0-----------------------------------
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git commit -m "index file"
+[master 75a1d48] index file
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git reset
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/project_dir (master)
+$
+
+----------------------------------html-assn-------------------------------
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~ (master)
+$ git --version
+git version 2.32.0.windows.2
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~ (master)
+$ mkdir assignments
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~ (master)
+$ cd assignments
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ touch README.txt
+
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git init
+Initialized empty Git repository in C:/Users/user/assignments/.git/
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git commit -m "commiting readme"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git checkout html-assignment
+error: pathspec 'html-assignment' did not match any file(s) known to git
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git commit -m "commiting readme"ggg
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git branch html-assignments
+fatal: Not a valid object name: 'master'.
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git add README.txt
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.txt
+
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git commit -m "commiting readme"
+[master (root-commit) 64d4607] commiting readme
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.txt
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git branch html-assignments
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git config --local user.username Varshini1804
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git config --global user.email varshini.a.s@capgemini.com
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git status
+On branch html-assignments
+nothing to commit, working tree clean
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git commit
+On branch html-assignments
+nothing to commit, working tree clean
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git commit
+On branch html-assignments
+nothing to commit, working tree clean
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git status
+On branch html-assignments
+nothing to commit, working tree clean
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ touch ass1.html
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ touch ass2.html
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git commit -m "commiting html files"
+On branch html-assignments
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ass1.html
+        ass2.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git status
+On branch html-assignments
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ass1.html
+        new file:   ass2.html
+
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git commit -m "commiting html files"
+[html-assignments a24d9db] commiting html files
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ass1.html
+ create mode 100644 ass2.html
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$  git checkout html-assignments ass1.txt
+error: pathspec 'ass1.txt' did not match any file(s) known to git
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$  git checkout html-assignments ass1.html
+Updated 0 paths from ba8fec5
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git commit -m "commiting html files"
+On branch html-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ass1.html
+        modified:   ass2.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git commit -m "commiting html files"
+[html-assignments 634de57] commiting html files
+ 2 files changed, 2 insertions(+)
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git commit -m "commiting readme"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git commit -m "commiting readme"
+[master 0ab80f0] commiting readme
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git commit -m "commiting changes for second time"
+On branch html-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ass1.html
+        modified:   ass2.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git commit -m "commiting changes for second time"
+[html-assignments b889cf4] commiting changes for second time
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git merge html-assignments
+Merge made by the 'recursive' strategy.
+ ass1.html | 2 ++
+ ass2.html | 2 ++
+ 2 files changed, 4 insertions(+)
+ create mode 100644 ass1.html
+ create mode 100644 ass2.html
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git log
+commit c4756e8d5dfad27ec338599367075e750952c40f (HEAD -> master)
+Merge: 0ab80f0 b889cf4
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 10:19:50 2021 +0530
+
+    merging is necessary merge branch 'html-assignments'
+
+commit b889cf4d45aafd2d6e74a881baf23714fdb25db5 (html-assignments)
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 10:18:52 2021 +0530
+
+    commiting changes for second time
+
+commit 0ab80f05978d6ec8362e92b96cefb8d9e6c56145
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 10:16:03 2021 +0530
+
+    commiting readme
+
+commit 634de573a72322a3caab60c8b9786c3281c2bb4d
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 10:13:20 2021 +0530
+
+:...skipping...
+commit c4756e8d5dfad27ec338599367075e750952c40f (HEAD -> master)
+Merge: 0ab80f0 b889cf4
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 10:19:50 2021 +0530
+
+    merging is necessary merge branch 'html-assignments'
+
+commit b889cf4d45aafd2d6e74a881baf23714fdb25db5 (html-assignments)
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 10:18:52 2021 +0530
+
+    commiting changes for second time
+
+commit 0ab80f05978d6ec8362e92b96cefb8d9e6c56145
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 10:16:03 2021 +0530
+
+    commiting readme
+
+commit 634de573a72322a3caab60c8b9786c3281c2bb4d
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 10:13:20 2021 +0530
+
+    commiting html files
+
+commit a24d9db89e808b4c26a7aa65ec5bb9a7a63955ba
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 10:06:54 2021 +0530
+
+    commiting html files
+
+commit 64d4607006eb890d9069e1be918c76247c8665b7
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 09:38:52 2021 +0530
+
+    commiting readme
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$ git branch -d html-assignments
+Deleted branch html-assignments (was b889cf4).
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignments (master)
+$
+
+---------------------CSS-ASSN------------------------------------------------
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~ (master)
+$ mkdir assignment
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~ (master)
+$ cd assignment
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git init
+Initialized empty Git repository in C:/Users/user/assignment/.git/
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ touch README.txt
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git commit -m "commiting readme"
+[master (root-commit) 6dd1c4f] commiting readme
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.txt
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git branch css-assignment
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git checkout css-assignment
+Switched to branch 'css-assignment'
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (css-assignment)
+$ touch ass1.css
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (css-assignment)
+$ touch ass2.css
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (css-assignment)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (css-assignment)
+$ git commit -m "commiting files in css"
+[css-assignment e6cb3e1] commiting files in css
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ass1.css
+ create mode 100644 ass2.css
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (css-assignment)
+$ git status
+On branch css-assignment
+nothing to commit, working tree clean
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (css-assignment)
+$ git commit -m "changes in readme"
+On branch css-assignment
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+        modified:   ass1.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (css-assignment)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (css-assignment)
+$ git status
+On branch css-assignment
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.txt
+        modified:   ass1.css
+
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (css-assignment)
+$ git commit -m "changes in readme"
+[css-assignment 5ddfcee] changes in readme
+ 2 files changed, 2 insertions(+)
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (css-assignment)
+$ git checkout master
+Switched to branch 'master'
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git commit -m "changes in readme line 3"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git commit -m "changes in readme line 3"
+[master dd87b31] changes in readme line 3
+ 1 file changed, 3 insertions(+)
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git checkout css-assignment
+Switched to branch 'css-assignment'
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (css-assignment)
+$ git commit -m "changes in CSS"
+On branch css-assignment
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ass1.css
+        modified:   ass2.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (css-assignment)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (css-assignment)
+$ git commit -m "changes in CSS"
+[css-assignment 97cd975] changes in CSS
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (css-assignment)
+$ git checkout master
+Switched to branch 'master'
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git merge css-assignment
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   ass1.css
+        new file:   ass2.css
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.txt
+
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master|MERGING)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master|MERGING)
+$ git commit -m "changes in master"
+[master 4679b93] changes in master
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git merge css-assignment
+Already up to date.
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git merge css-assignment
+Already up to date.
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git commit -m "changes in master"
+On branch master
+nothing to commit, working tree clean
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git merge css-assignment
+Already up to date.
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git merge --abort
+fatal: There is no merge to abort (MERGE_HEAD missing).
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git merge css-assignment
+Already up to date.
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git log
+commit 4679b93052c8f2981271695c8b7560596d8325b1 (HEAD -> master)
+Merge: dd87b31 97cd975
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 12:08:20 2021 +0530
+
+    changes in master
+
+commit 97cd975ced4965d1440f2eca614b34d9f347d6c9 (css-assignment)
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 12:07:03 2021 +0530
+
+    changes in CSS
+
+commit dd87b3188dbe2b7754b969e06fb22298c61cb257
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 12:03:50 2021 +0530
+
+    changes in readme line 3
+
+commit 5ddfceea191c4569f33f2a914743d7c5d49f40dd
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 12:02:35 2021 +0530
+
+    changes in readme
+
+commit e6cb3e1d54b5d72e4004125681beacdde1a172cf
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 11:59:25 2021 +0530
+
+    commiting files in css
+:
+commit 97cd975ced4965d1440f2eca614b34d9f347d6c9 (css-assignment)
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 12:07:03 2021 +0530
+
+    changes in CSS
+
+commit dd87b3188dbe2b7754b969e06fb22298c61cb257
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 12:03:50 2021 +0530
+
+    changes in readme line 3
+
+commit 5ddfceea191c4569f33f2a914743d7c5d49f40dd
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 12:02:35 2021 +0530
+
+    changes in readme
+
+commit e6cb3e1d54b5d72e4004125681beacdde1a172cf
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 11:59:25 2021 +0530
+
+    commiting files in css
+
+commit 6dd1c4f5356c0cd35526d53c77e55d5bbfd8c20a
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 11:56:38 2021 +0530
+
+    commiting readme
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+...skipping...
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+commit 4679b93052c8f2981271695c8b7560596d8325b1 (HEAD -> master)
+Merge: dd87b31 97cd975
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 12:08:20 2021 +0530
+
+    changes in master
+
+commit 97cd975ced4965d1440f2eca614b34d9f347d6c9 (css-assignment)
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 12:07:03 2021 +0530
+
+    changes in CSS
+
+commit dd87b3188dbe2b7754b969e06fb22298c61cb257
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 12:03:50 2021 +0530
+
+    changes in readme line 3
+
+commit 5ddfceea191c4569f33f2a914743d7c5d49f40dd
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 12:02:35 2021 +0530
+
+    changes in readme
+
+commit e6cb3e1d54b5d72e4004125681beacdde1a172cf
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 11:59:25 2021 +0530
+
+    commiting files in css
+
+commit 6dd1c4f5356c0cd35526d53c77e55d5bbfd8c20a
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 11:56:38 2021 +0530
+
+    commiting readme
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git branch -d css-assignment
+Deleted branch css-assignment (was 97cd975).
+
+--------------------------------JS-ASSN--------------------------------------------
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~ (master)
+$ mkdir assignment
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~ (master)
+$ cd assignment
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ touch README.txt
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git init
+Initialized empty Git repository in C:/Users/user/assignment/.git/
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git add README.txt
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git commit -m "commiting"
+[master (root-commit) a553352] commiting
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.txt
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git branch js-assignments
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (js-assignments)
+$ touch assn1.js
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (js-assignments)
+$ touch assn2.js
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (js-assignments)
+$ git commit -m "commiting js files"
+On branch js-assignments
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        assn1.js
+        assn2.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (js-assignments)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (js-assignments)
+$ git commit -m "commiting js files"
+[js-assignments 9f33a50] commiting js files
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 assn1.js
+ create mode 100644 assn2.js
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+M       README.txt
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git commit -m "commiting changes in master"
+[master 3c9ff35] commiting changes in master
+ 1 file changed, 1 insertion(+)
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git log
+commit 3c9ff35fa379895790093214c381ff33f97643e9 (HEAD -> master)
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 14:00:25 2021 +0530
+
+    commiting changes in master
+
+commit a553352763441d6b8d80557b568d3b9e93761b2b
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 13:55:47 2021 +0530
+
+    commiting
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (js-assignments)
+$ git commit -m "commiting js files"
+On branch js-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   assn1.js
+        modified:   assn2.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (js-assignments)
+$ git add .
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (js-assignments)
+$ git commit -m "commiting js files"
+[js-assignments dd0a14f] commiting js files
+ 2 files changed, 2 insertions(+)
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (js-assignments)
+$ git status
+On branch js-assignments
+nothing to commit, working tree clean
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git merge js-assignments
+Merge made by the 'recursive' strategy.
+ assn1.js | 1 +
+ assn2.js | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 assn1.js
+ create mode 100644 assn2.js
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git log
+commit 22b977991c597d9a767825c367cf056d78b26f6b (HEAD -> master)
+Merge: 3c9ff35 dd0a14f
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 14:03:19 2021 +0530
+
+    merging with the master Merge branch 'js-assignments'
+
+commit dd0a14fa1318014431ece144d92277e1a121f14f (js-assignments)
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 14:02:34 2021 +0530
+
+    commiting js files
+
+commit 3c9ff35fa379895790093214c381ff33f97643e9
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 14:00:25 2021 +0530
+
+    commiting changes in master
+
+commit 9f33a50d0fdce211d93bf203e3b73a425d510f28
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 13:57:19 2021 +0530
+
+    commiting js files
+
+commit a553352763441d6b8d80557b568d3b9e93761b2b
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 13:55:47 2021 +0530
+
+    commiting
+...skipping...
+commit dd0a14fa1318014431ece144d92277e1a121f14f (js-assignments)
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 14:02:34 2021 +0530
+
+    commiting js files
+
+commit 3c9ff35fa379895790093214c381ff33f97643e9
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 14:00:25 2021 +0530
+
+    commiting changes in master
+
+commit 9f33a50d0fdce211d93bf203e3b73a425d510f28
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 13:57:19 2021 +0530
+
+    commiting js files
+
+commit a553352763441d6b8d80557b568d3b9e93761b2b
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 13:55:47 2021 +0530
+
+    commiting
+(END)
+commit dd0a14fa1318014431ece144d92277e1a121f14f (js-assignments)
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 14:02:34 2021 +0530
+
+    commiting js files
+
+commit 3c9ff35fa379895790093214c381ff33f97643e9
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 14:00:25 2021 +0530
+
+    commiting changes in master
+
+commit 9f33a50d0fdce211d93bf203e3b73a425d510f28
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 13:57:19 2021 +0530
+
+    commiting js files
+
+commit a553352763441d6b8d80557b568d3b9e93761b2b
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 13:55:47 2021 +0530
+
+    commiting
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+...skipping...
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+commit 22b977991c597d9a767825c367cf056d78b26f6b (HEAD -> master)
+Merge: 3c9ff35 dd0a14f
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 14:03:19 2021 +0530
+
+    merging with the master Merge branch 'js-assignments'
+
+commit dd0a14fa1318014431ece144d92277e1a121f14f (js-assignments)
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 14:02:34 2021 +0530
+
+    commiting js files
+
+commit 3c9ff35fa379895790093214c381ff33f97643e9
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 14:00:25 2021 +0530
+
+    commiting changes in master
+
+commit 9f33a50d0fdce211d93bf203e3b73a425d510f28
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 13:57:19 2021 +0530
+
+    commiting js files
+
+commit a553352763441d6b8d80557b568d3b9e93761b2b
+Author: unknown <varshini.a.s@capgemini.com>
+Date:   Thu Jul 29 13:55:47 2021 +0530
+
+    commiting
+
+Vachran@LAPTOP-DDJRU0BV MINGW64 ~/assignment (master)
+$ git branch -d js-assignments
+Deleted branch js-assignments (was dd0a14f).
+
