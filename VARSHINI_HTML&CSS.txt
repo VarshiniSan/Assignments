@@ -1,0 +1,766 @@
+-------------------------------------HTML_ASSN---------------------------------------------------
+1)
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body style="background-color:yellow;">
+ <div>
+<h1 style="background-color:yellow;">This is a Heading</h1>
+<p style="background-color:yellow;"> This is a paragraph.</p>
+</div>
+</body>
+</html>
+
+2)
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+        <h4>Create a link of an image:</h4>
+        <a href="https://www.google.com/"><img src="smiley.jpg" width="100" height = "100" alt="HTML assn" border= "5"></a>
+        </div>
+        <h4>no border around the image,but still a link:</h4>
+        <a href="https://www.google.com/"><img src="smiley.jpg" width="100" height = "100" alt="HTML assn" ></a>
+    </body>
+</html>
+
+3)
+i)
+<!DOCTYPE html>
+<html>
+    <body>
+      <table>
+          <tr>
+              <th>100</th>
+          </tr>
+          <style>table, th, td {border: 0.5px solid black;
+                  border-collapse: collapse;} </style>
+        </table>
+    </body>
+</html>
+
+ ii)          <th>200</th>
+              <th>300</th>
+
+ iii)       <tr>
+              <th>100</th>
+              <th>200</th>
+              <th>300</th>
+          </tr>
+          <tr>
+            <th>400</th>
+            <th>500</th>
+            <th>600</th>
+        </tr>
+         
+
+4)
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>this is with border</p>
+      <table border="1">
+          <tbody>
+          <tr>
+              <th>100</th>
+              <th>200</th>
+              <th>300</th>
+          </tr>
+          <tr>
+            <th>400</th>
+            <th>500</th>
+            <th>600</th>
+        </tr>
+          
+            </tbody>
+        </table >
+        <br>
+        <table border="0">
+            <p>this is without border</p>
+            <tbody>
+            <tr>
+                <th>100</th>
+                <th>200</th>
+                <th>300</th>
+            </tr>
+            <tr>
+              <th>400</th>
+              <th>500</th>
+              <th>600</th>
+          </tr>
+          
+            </tbody>
+          </table>
+    </body>
+</html>
+
+
+5)
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <ol type="1">
+            <li>apple</li> 
+            <li>banana</li>
+            <li>lemon</li>
+            <li>orange</li>
+        </ol>
+        <ol type="A">
+            <li>apple</li> 
+            <li>banana</li>
+            <li>lemon</li>
+            <li>orange</li>
+        </ol>
+        <ol type="a">
+            <li>apple</li> 
+            <li>banana</li>
+            <li>lemon</li>
+            <li>orange</li>
+        </ol>
+        <ol type="I">
+            <li>apple</li> 
+            <li>banana</li>
+            <li>lemon</li>
+            <li>orange</li>
+        </ol>
+        <ol type="i">
+            <li>apple</li> 
+            <li>banana</li>
+            <li>lemon</li>
+            <li>orange</li>
+        </ol>
+    </body>
+</html>
+
+6)
+
+<!DOCTYPE html>
+<html>
+    <body>
+      <form>
+          <label for="username">USERNAME</label>
+          <input type="text" id="username">
+          <br><br>
+          <label for="password" >PASSWORD</label>
+          <input type="password" id="password">
+      </form>
+    </body>
+</html>
+
+7)
+
+<!DOCTYPE html>
+<html>
+    <body>
+      <form>
+          <label for="vehicle">i have a bike</label>
+          <input type="checkbox" id="bike">
+          <br><br>
+          <input type="checkbox" id="car">
+          <label for="vehicle2" >i have a car</label>
+          <br><br>
+          <input type="submit" value="Submit">
+      </form>
+    </body>
+</html>
+
+8)
+
+9)
+
+---------------------------------CSS3_ASSN---------------------------------------
+1)
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    body{
+      background-color: blue ;
+    }
+p{
+  background-color: paleturquoise;
+}
+div{
+  background-color: cornflowerblue;
+}
+    </style>
+<body>
+  <h1>CSS background example</h1>
+  <div>text inside div element
+    <p>
+this is a paragraph
+    </p>
+    we are still inside div element
+  </div>
+    </body>
+  </head>
+</html>
+
+2)
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <style>
+            body {background-color:aquamarine;}
+          h2{text-decoration-line: line-through; }
+          h3{text-decoration-line: underline;}
+        </style>
+        
+<h1>this is heading1</h1>
+<h2>this is heading2</h2>
+<h3>this is heading3</h3>
+<h4>this is heading4</h4>
+
+    </body>
+</html>
+
+3)
+
+HTML FILE
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p>THIS IS SOME TEXT</p>
+<p>This is some text</p>
+<p>This is some text</p>
+
+</body>
+</html>
+
+CSS FILE
+
+body {
+    background-color: powderblue;
+  }
+
+4)
+html file
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p><b><a href="https://www.google.com/" target="_blank">This is a link</a></b></p>
+
+</body>
+</html>
+
+css file
+/* unvisited link */
+a:link {
+    color: yellow;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  a:hover {
+    color: pink;
+  }
+  a:active {
+    color: blue;
+  }
+
+5)
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Let the borders collapse</h2>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+6)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td, th {
+  border: 2px solid green;
+}
+
+
+th{
+  background-color:green;
+  color: azure;
+}
+</style>
+</head>
+<body>
+
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>salary</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>150</td>
+  </tr>
+  <tr>
+    <td>Joe</td> 
+    <td>Swason</td> 
+    <td>300</td>  
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>250</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+7)
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+p{
+  outline-style: dotted;
+  outline-color: green;
+  outline-width: thick;
+  border: 1px solid orange;
+}
+    </style>
+    <body>
+<p><strong>Note:</strong>IE8 supports the outline property if a !DOCTYPE is specified.</p>
+    </body>
+  </head>
+</html>
+
+8)
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+div.a{
+  outline-style: solid;
+  outline-color: orange;
+  outline-width: thick;
+}
+div.b{
+  outline-style: solid;
+  outline-color: orange;
+  outline-width: medium;
+}
+div.c{
+  outline-style: solid;
+  outline-color: orange;
+  outline-width: thin;
+}
+    </style>
+    <body>
+<div class="a">some text</div><br>
+<div class="b">some text</div><br>
+<div class="c">some text</div><br>
+    </body>
+  </head>
+</html>
+-----------------------------------------------------ASSN-3-------------------------------------------------------------------------
+1)
+
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        
+        <div class="a"><h1>PARK SHIN HYE</h1></div>
+<div>
+    <a href ="https://en.wikipedia.org/wiki/Park_Shin-hye"><img src="download.jpg" alt="html assn" border="5" class="center"></a>
+</div><br>
+<div class="b"><p>Park Shin-hye is a South Korean actress and singer. She gained recognition for starring in the television dramas Stairway to Heaven (2003) and Tree of Heaven (2006). 
+    Considered one of the most prolific actresses of her age,[1][2] Park received further recognition for her roles in the television dramas You're Beautiful (2009), The Heirs (2013), Pinocchio (2014–2015), Doctors (2016), Memories of the Alhambra (2018–2019) and #Alive (2020), Sisyphus: The Myth (2021)
+    In 2015, Park ranked 33rd in Forbes Korea Power Celebrity list,[3] and 12th in 2017[4]and ranked 40th in 2021.</p></div><br>
+<div class="c">
+    <ul style="list-style-type: disc;">
+        <li><strong>Born: </strong>February 18, 1990 (age 31)
+        Nam District, Gwangju, South Korea</li>
+        <li><strong>Education: </strong>Chung-Ang University</li>
+        <li><strong>Ocupation: </strong>Actress, singer</li>
+        <li><strong>Years active: </strong> 2003- Present</li>
+        <li><strong>Height: </strong>168cm</li>
+ 
+</ul>
+</div><br>
+<div class="d">For more details refer: <a href ="https://en.wikipedia.org/wiki/Park_Shin-hye"></a></div>
+    </body>
+</html>
+
+CSS FILE
+
+body{
+    background-color: pink;
+    margin-top: 33px;
+    margin-right: 33px;
+    margin-left: 33px;
+    margin-bottom: 33px;
+}
+.center {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+  }
+ div.a
+ { text-align: center;}
+ div.b
+ {align-content: center;
+border: 1px solid black;}
+div.c
+{align-content: center;
+border: 1px solid black;}
+
+
+
+2)
+
+HTML FILE
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">
+    <h1>SURVEY FORM</h1>
+    <body>
+        <p><strong>NOTE: </strong>ALL DETAILS ARE TO BE FILLED(MANDATORY)</p>
+        <form>
+            <label for="fname">FIRST NAME: </label>
+            <input type="text" id="fname" name="fname">
+            <label for="mname">MIDDLE NAME: </label>
+            <input type="text" id="mname" name="mname">
+            <label for="lname">LAST NAME: </label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="address">ADDRESS: </label>
+            <input type="text" id="address" name="address"><br><br>
+            <label for="email">EMAIL: </label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="number">PH. NO.: </label>
+            <input type="tel" id="number" name="phno" pattern="[0-9]{10}"><BR><BR>
+            <p>GENDER: </p>
+            <input type="checkbox" id="gender" name="male" value="Male">
+            <label for="gender"> MALE</label>
+            <input type="checkbox" id="gender" name="female" value="female">
+            <label for="gender"> FEMALE</label><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"> <br><br>
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <input type="submit">
+        </form>
+        
+        
+    </body>
+</head>
+</html>
+
+CSS FILE
+
+body{
+    background-color: white;
+}
+h1{
+text-align: center;
+}
+input{
+    width: 15%;
+}
+input[type=email]
+{
+    width: 15%;
+}
+input[type=tel]
+{
+    width: 15%;
+}
+
+
+
+
+3)
+
+HTML FILE
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+<body>
+ 
+    <div class="a"><span>Parallax </span></div>  
+    <div class="b">
+        <div class="content">
+            <p>PARALLAX.</p>
+        </div>
+    </div>
+    <div class="c">
+        <div class="content">
+            <p>
+               WELCOME TO VARSHINI'S PAGE</p>
+        </div>
+    </div>
+    <div class="d">
+        <div class="content">
+           <P>
+               THIS MY FIRST TIME IN CREATING PARALLAX WEBPAGE.
+           </P>
+        </div>
+    </div>
+</body>
+</html>
+
+CSS FILE
+
+html {
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.b {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+.b::before {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-image: url("nature1.jpg");
+    position: absolute;
+    z-index: -1;
+    transform:translateZ(-1px) scale(2);
+}
+.c {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    background-image: url("nature3.jpg");
+    z-index: 2;
+    position: relative;
+}
+.content {
+    margin: 0 auto;
+    padding: 50px;
+    width: 50%;
+    background: #aaa;
+}
+.d{
+    width: 100vw;
+    height: 100vw;
+    padding-top: 20vh;
+    background-image: url("download.jpg");
+    z-index: 2;
+    position: relative;
+}
+.content{
+    margin: auto;
+    padding: 50px;
+    width: 100%;
+    background:violet
+}
+
+4)
+HTML FILE
+<!DOCTYPE html>
+<html>
+  <body>
+    <link rel="stylesheet" href="style.css">
+
+  <header id="showcase">
+  <h1>Welcome Varshini page</h1>
+  <p>have a good day</p>
+  <a href="#" class="button">SCROLL DOWN</a>
+</header>
+
+<section id="section-a">
+  <p><strong>WELCOME ALL</strong> </p>
+</section>
+
+<section id="section-b">
+  <p><strong>MORE IN THIS WEBSITE</strong> </p>
+</section>
+
+<section id="section-c">
+  <div class="box-1">
+    ABOUT US
+  </div>
+  <div class="box-2">
+    CONTACT
+  </div>
+  <div class="box-3">
+    MORE OPTIONS
+    </div>
+</section>
+</body>
+</html>
+
+CSS FILE
+html{
+    margin:0;
+    padding:0;
+   
+  }
+  body{
+    margin:0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size:17px;
+    color:#926239;
+    line-height:1.6;   
+  }
+  
+  #showcase{
+    background-image:url("nature3.jpg");
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+  }
+  
+  #showcase h1{
+    font-size:50px;
+    line-height:1.2;
+    color: black;
+    text-align: center;
+    transform:translateY(250px);
+  }
+  
+  #showcase p{
+    font-size:20px;
+    color: black;
+    align-content: center;
+    transform: translateY(250px);
+  }
+  
+  #showcase .button{
+    font-size:18px;
+    text-decoration:none;
+    color:black;
+    border: black 1px solid;
+    padding:10px 20px;
+    border-radius:10px;
+    margin-top:20px;
+    transform: translateY(500px);
+    
+  }
+  
+  #showcase .button:hover{
+    background:black;
+    color:#fff;
+    transform: translateY(500px);
+  }
+  
+  #section-a{
+    padding:20px;
+    background:black;
+    color:#fff;
+    text-align:center;
+  }
+  
+  #section-b{
+    padding:20px;
+    background:black;
+    text-align:center;
+  }
+  
+  #section-c div{
+    padding:20px;
+  }
+  
+  #section-c .box-1, #section-c .box-3{
+    background:black;
+    color:#fff;
+    align-content: center;
+  }
+  
+  #section-c .box-2{
+    background:#f9f9f9;
+    align-content: center;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
